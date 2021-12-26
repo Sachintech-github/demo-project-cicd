@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VINON Technologies &#8211; AWS , Azure, GCP, O365, Fortinet, Trend Micro</title>
+<style type="text/css" media="screen">#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover,body #booked-profile-page input[type=submit].button-primary:hover,body .booked-list-view button.button:hover, body .booked-list-view input[type=submit].button-primary:hover,body table.booked-calendar input[type=submit].button-primary:hover,body .booked-modal input[type=submit].button-primary:hover,body table.booked-calendar th,body table.booked-calendar thead,body table.booked-calendar thead th,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,body #booked-profile-page .booked-profile-header,body #booked-profile-page .booked-tabs li.active a,body #booked-profile-page .booked-tabs li.active a:hover,body #booked-profile-page .appt-block .google-cal-button > a:hover,#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header{ background:#c4f2d4 !important; }body #booked-profile-page input[type=submit].button-primary:hover,body table.booked-calendar input[type=submit].button-primary:hover,body .booked-list-view button.button:hover, body .booked-list-view input[type=submit].button-primary:hover,body .booked-modal input[type=submit].button-primary:hover,body table.booked-calendar th,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,body #booked-profile-page .booked-profile-header,body #booked-profile-page .appt-block .google-cal-button > a:hover{ border-color:#c4f2d4 !important; }body table.booked-calendar tr.days,body table.booked-calendar tr.days th,body .booked-calendarSwitcher.calendar,body #booked-profile-page .booked-tabs,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th{ background:#039146 !important; }body table.booked-calendar tr.days th,body #booked-profile-page .booked-tabs{ border-color:#039146 !important; }#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,body #booked-profile-page input[type=submit].button-primary,body table.booked-calendar input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-modal input[type=submit].button-primary,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,body #booked-profile-page .appt-block .google-cal-button > a,body .booked-modal p.booked-title-bar,body table.booked-calendar td:hover .date span,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,.booked-ms-modal .booked-book-appt /* Multi-Slot Booking */{ background:#56c477; }body #booked-profile-page input[type=submit].button-primary,body table.booked-calendar input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,body .booked-modal input[type=submit].button-primary,body #booked-profile-page .appt-block .google-cal-button > a,body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover{ border-color:#56c477; }body .booked-modal .bm-window p i.fa,body .booked-modal .bm-window a,body .booked-appt-list .booked-public-appointment-title,body .booked-modal .bm-window p.appointment-title,.booked-ms-modal.visible:hover .booked-book-appt{ color:#56c477; }.booked-appt-list .timeslot.has-title .booked-public-appointment-title { color:inherit; }</style><meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+<link rel="alternate" type="application/rss+xml" title="VINON Technologies &raquo; Feed" href="https://vinontech.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="VINON Technologies &raquo; Comments Feed" href="https://vinontech.com/comments/feed/" />
+<meta name="description" content="AWS , Azure, GCP, O365, Fortinet, Trend Micro" />
+<link rel='stylesheet' id='layerslider-css'  href='https://vinontech.com/wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css?ver=6.11.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://vinontech.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='booked-icons-css'  href='https://vinontech.com/wp-content/plugins/booked/assets/css/icons.css?ver=2.3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='booked-tooltipster-css'  href='https://vinontech.com/wp-content/plugins/booked/assets/js/tooltipster/css/tooltipster.css?ver=3.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='booked-tooltipster-theme-css'  href='https://vinontech.com/wp-content/plugins/booked/assets/js/tooltipster/css/themes/tooltipster-light.css?ver=3.3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='booked-animations-css'  href='https://vinontech.com/wp-content/plugins/booked/assets/css/animations.css?ver=2.3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='booked-css-css'  href='https://vinontech.com/wp-content/plugins/booked/dist/booked.css?ver=2.3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://vinontech.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpos-slick-style-css'  href='https://vinontech.com/wp-content/plugins/wp-slick-slider-and-image-carousel/assets/css/slick.css?ver=2.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsisac-public-style-css'  href='https://vinontech.com/wp-content/plugins/wp-slick-slider-and-image-carousel/assets/css/slick-slider-style.css?ver=2.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='st-video-popup-css'  href='https://vinontech.com/wp-content/plugins/redseal-plugin/vc-addons/video-popup/assets/video-popup.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vc_extend_style-css'  href='https://vinontech.com/wp-content/plugins/redseal-plugin/vc-addons/logo/assets/vc_extend.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-icons-css'  href='https://vinontech.com/wp-content/themes/redseal/assets/css/theme-icons.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://vinontech.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-smoothness-css'  href='https://vinontech.com/wp-content/plugins/contact-form-7/includes/js/jquery-ui/themes/smoothness/jquery-ui.min.css?ver=1.12.1' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?ver=4.2.0' type='text/css' media='' />
+<link rel='stylesheet' id='sp-style-css'  href='https://vinontech.com/wp-content/plugins/redseal-plugin//public/css/style.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bricklayer-groundwork-css'  href='https://vinontech.com/wp-content/themes/redseal/assets/css/groundwork-responsive.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='redseal-style-default-css'  href='https://vinontech.com/wp-content/themes/redseal/style.min.css?ver=5.7.4' type='text/css' media='all' />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro:400,600,400normal,Normal&#038;display=swap&#038;ver=1628586122" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro:400,600,400normal,Normal&#038;display=swap&#038;ver=1628586122" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro:400,600,400normal,Normal&#038;display=swap&#038;ver=1628586122" /></noscript><link rel='stylesheet' id='redseal_options_style-css'  href='https://vinontech.com/wp-content/themes/redseal/assets/css/redseal_options_style.css?ver=5.7.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://vinontech.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='layerslider-utils-js-extra'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.11.1","fixGSAP":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.utils.js?ver=6.11.1' id='layerslider-utils-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.11.1' id='layerslider-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.transitions.js?ver=6.11.1' id='layerslider-transitions-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/vendor/modernizr-2.7.0.min.js' id='modernizr-js'></script>
+<meta name="generator" content="Powered by LayerSlider 6.11.1 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel="https://api.w.org/" href="https://vinontech.com/wp-json/" /><link rel="alternate" type="application/json" href="https://vinontech.com/wp-json/wp/v2/pages/5871" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vinontech.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://vinontech.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.4" />
+<link rel="canonical" href="https://vinontech.com/" />
+<link rel='shortlink' href='https://vinontech.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://vinontech.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvinontech.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://vinontech.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvinontech.com%2F&#038;format=xml" />
+<meta name="framework" content="Redux 4.2.11" />	<script>
+		var care_plugin = care_plugin ||
+			{
+				data: {
+					vcWidgets: {}
+				}
+			};
+	</script>
+	<script>
+		var wheels = wheels ||
+			{
+				siteName: "VINON Technologies",
+				data: {
+					useScrollToTop: true,
+					useStickyMenu: true,
+					scrollToTopText: "to top",
+					isAdminBarShowing: false,
+					initialWaypointScrollCompensation: "120"				}
+			};
+	</script>
+<script id="wh-custom-js-code">
+jQuery(document).ready(function(){
+
+});
+</script>
+	<style>
+		@media screen and (max-width: 767px) {
+			#cbp-menu-main { width: 100%; }
+
+			.wh-main-menu { display: none; }
+			.wh-header { display: none; }
+		}
+	</style>
+	<script>
+		var wheels  = wheels || {};
+		wheels.data = wheels.data || {};
+
+		wheels.data.respmenu = {
+			id: 'cbp-menu-main',
+			options: {
+				id: 'cbp-menu-main-respmenu-sticky-enabled',
+				submenuToggle: {
+					className: 'cbp-respmenu-more',
+					html: '<i class="icon-icon-arrow-down-simple"></i>'
+				},
+				logo: {
+					src: "",
+					link: 'https://vinontech.com/'
+				},
+				toggleSwitch: {
+					src: ""				},
+				prependTo: 'body',
+				skipClasses: ['wcmenucart-contents', 'crea-woocommerce-wrapper']
+			},
+			useSticky: 1,
+			showStart: 767		};
+	</script>
+	<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1534423007878{background-color: #f2f2f2 !important;}.vc_custom_1499113335572{margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1504469365931{padding-top: 7px !important;padding-bottom: 7px !important;}.vc_custom_1504469327852{padding-top: 7px !important;padding-right: 20px !important;padding-bottom: 7px !important;}.vc_custom_1504470185973{border-left-width: 1px !important;padding-top: 5px !important;padding-bottom: 6px !important;padding-left: 30px !important;border-left-color: #ffffff !important;border-left-style: solid !important;}.vc_custom_1512726289017{margin-bottom: 0px !important;}.vc_custom_1504469342365{padding-right: 15px !important;}.vc_custom_1504380432284{margin-bottom: 0px !important;margin-left: -5px !important;}.vc_custom_1586930143046{margin-bottom: 0px !important;}.vc_custom_1504093452215{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1586612111435{padding-top: 1px !important;}.vc_custom_1586612064713{padding-top: 10px !important;padding-right: 5px !important;}.vc_custom_1586612415246{border-left-width: 1px !important;padding-top: 15px !important;padding-bottom: px !important;padding-left: 30px !important;border-left-color: #f2f2f2 !important;border-left-style: solid !important;}.vc_custom_1504469483477{padding-left: 110px !important;}.vc_custom_1502189275262{padding-top: 10px !important;padding-right: 10px !important;padding-bottom: 10px !important;padding-left: 10px !important;background-color: #f2f2f2 !important;border-radius: 35px !important;}.vc_custom_1586612173520{margin-bottom: 0px !important;padding-top: 10px !important;}.vc_custom_1502219667960{padding-top: 10px !important;padding-right: 10px !important;padding-bottom: 10px !important;padding-left: 10px !important;background-color: #f2f2f2 !important;border-radius: 35px !important;}.vc_custom_1512726131626{margin-bottom: 0px !important;padding-top: 10px !important;padding-left: 45px !important;}.vc_custom_1512726161568{padding-left: 45px !important;}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1516449831598{padding-top: 20px !important;}.vc_custom_1516448905433{padding-left: 80px !important;}.vc_custom_1516881901248{padding-top: 40px !important;padding-left: 50px !important;}.vc_custom_1516702091346{padding-top: 30px !important;}</style>
+<style type="text/css" id="breadcrumb-trail-css">.breadcrumbs .trail-browse,.breadcrumbs .trail-items,.breadcrumbs .trail-items li {display: inline-block;margin:0;padding: 0;border:none;background:transparent;text-indent: 0;}.breadcrumbs .trail-browse {font-size: inherit;font-style:inherit;font-weight: inherit;color: inherit;}.breadcrumbs .trail-items {list-style: none;}.trail-items li::after {content: "\002F";padding: 0 0.5em;}.trail-items li:last-of-type::after {display: none;}</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://vinontech.com/wp-content/uploads/2020/04/cropped-availability-icon-6-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://vinontech.com/wp-content/uploads/2020/04/cropped-availability-icon-6-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://vinontech.com/wp-content/uploads/2020/04/cropped-availability-icon-6-180x180.png" />
+<meta name="msapplication-TileImage" content="https://vinontech.com/wp-content/uploads/2020/04/cropped-availability-icon-6-270x270.png" />
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1498316236165{padding-top: 0px !important;}.vc_custom_1504536091394{margin-top: 80px !important;padding-top: 35px !important;padding-bottom: 50px !important;background-image: url(https://smeeptech.com/wp-content/uploads/2017/08/red-seal-background-min-3.jpg?id=4330) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1498510322686{padding-top: 35px !important;background-color: #ffffff !important;}.vc_custom_1498853849383{margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-color: #ffffff !important;}.vc_custom_1501250933561{margin-top: -20px !important;padding-top: 0px !important;background-color: #ffffff !important;}.vc_custom_1498316236165{padding-top: 0px !important;}.vc_custom_1504451241312{padding-bottom: 40px !important;background-image: url(https://smeeptech.com/wp-content/uploads/2017/08/red-seal-signature-min-3.jpg?id=4387) !important;background-position: center;background-repeat: no-repeat;background-size:cover;}.vc_custom_1501262173388{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1501262190016{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1514287455983{padding-top: 10px !important;padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1628586854655{margin-bottom: 20px !important;}.vc_custom_1499335093021{margin-bottom: 20px !important;}.vc_custom_1516881524252{margin-bottom: 20px !important;}.vc_custom_1513858905525{margin-bottom: 20px !important;}.vc_custom_1514287413125{margin-bottom: 20px !important;}.vc_custom_1514209863474{margin-bottom: 23px !important;}.vc_custom_1514209762041{padding-top: 12px !important;}.vc_custom_1514209728581{margin-bottom: 15px !important;}.vc_custom_1621777590746{margin-bottom: 23px !important;}.vc_custom_1621777603470{padding-top: 12px !important;}.vc_custom_1621777852347{margin-bottom: 15px !important;}.vc_custom_1514210128210{margin-bottom: 23px !important;}.vc_custom_1512723630301{padding-top: 12px !important;}.vc_custom_1628586893994{margin-bottom: 15px !important;}.vc_custom_1514210264682{margin-bottom: 23px !important;}.vc_custom_1514207760949{padding-top: 12px !important;}.vc_custom_1512723881225{margin-bottom: 15px !important;}.vc_custom_1497001332910{padding-top: 0px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1516107182247{padding-bottom: 10px !important;}.vc_custom_1461592716078{margin-bottom: 0px !important;}.vc_custom_1504123554049{margin-bottom: 0px !important;}.vc_custom_1628586914805{margin-bottom: 0px !important;}.vc_custom_1502185834954{margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1513350935592{padding-top: 40px !important;}.vc_custom_1513351208269{padding-top: 12px !important;}.vc_custom_1513350613620{margin-bottom: 15px !important;}.vc_custom_1513350812997{margin-bottom: 15px !important;}.vc_custom_1513351190109{padding-top: 12px !important;}.vc_custom_1513350651184{margin-bottom: 15px !important;}.vc_custom_1513350833738{margin-bottom: 15px !important;}.vc_custom_1513351220038{padding-top: 12px !important;}.vc_custom_1513350678132{margin-bottom: 15px !important;}.vc_custom_1513350850862{margin-bottom: 15px !important;}.vc_custom_1513351229890{padding-top: 12px !important;}.vc_custom_1513350707678{margin-bottom: 15px !important;}.vc_custom_1513350880158{margin-bottom: 15px !important;}.vc_custom_1501250716544{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1501250748136{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1501250793762{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1513331619633{margin-bottom: 0px !important;}.vc_custom_1513331619633{margin-bottom: 0px !important;}.vc_custom_1512727181037{margin-bottom: 0px !important;}.vc_custom_1501233569428{margin-bottom: 15px !important;}.vc_custom_1512727181037{margin-bottom: 0px !important;}.vc_custom_1501233569428{margin-bottom: 15px !important;}.vc_custom_1512727214308{margin-bottom: 0px !important;}.vc_custom_1501233580027{margin-bottom: 15px !important;}.vc_custom_1513674716242{margin-bottom: 0px !important;padding-top: 15px !important;}.vc_custom_1514210603938{margin-bottom: 0px !important;}.vc_custom_1513346125786{padding-left: 400px !important;}.vc_custom_1481533251129{margin-top: 40px !important;margin-bottom: 40px !important;padding-top: 0px !important;}.vc_custom_1497348892025{margin-top: 40px !important;margin-bottom: 40px !important;padding-top: 0px !important;}.vc_custom_1497348271027{margin-top: 40px !important;margin-bottom: 40px !important;padding-top: 0px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="home page-template page-template-template-home page-template-template-home-php page page-id-5871 wpb-js-composer js-comp-ver-6.1 vc_responsive">
+
+
+    
+<div class="cbp-container wh-top-bar pad-left">
+			<div class="cbp-container wh-top-bar pad-left">
+			<p><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid wh-top-header vc_custom_1534423007878 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-7 vc_col-md-6 vc_hidden-xs"><div class="vc_column-inner vc_custom_1504469365931"><div class="wpb_wrapper"><p style="font-size: 14px;text-align: left" class="vc_custom_heading vc_custom_1512726289017" >Enjoy your journey with 11 years of experienced team</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1504469327852"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1504469342365"><div class="wpb_wrapper"><p style="font-size: 14px;text-align: left" class="vc_custom_heading pull-left crea-primary-color vc_custom_1504380432284" ><a href="http://downloads/">Downloads</a></p><p style="font-size: 14px;text-align: left" class="vc_custom_heading pull-right crea-primary-color vc_custom_1586930143046" ><a href="https://smeeptech.com/faq/" title="FAQ">FAQ</a></p></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5 vc_col-md-3 vc_col-has-fill"><div class="vc_column-inner vc_custom_1504470185973"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid call-us-top"><div class="top-phone-icon wpb_column vc_column_container vc_col-sm-1 vc_col-md-2"><div class="vc_column-inner"><div class="wpb_wrapper">
+					<div class="wh-theme-icon crea-primary-color" style="font-size:24px;position:absolute;"  >
+				<i class="icon-icon-phone" ></i>
+			</div>
+		
+		</div></div></div><div class="phone-top wpb_column vc_column_container vc_col-sm-11 vc_col-md-10"><div class="vc_column-inner vc_custom_1504093452215"><div class="wpb_wrapper"><p style="font-size: 16px;text-align: left" class="vc_custom_heading" >Call Us at:</p><p style="text-align: center" class="vc_custom_heading crea-primary-color text-strong" ><a href="tel:+91-727-601-5677">+91-727 601 5677</a></p></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid top-bar vc_custom_1499113335572"><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-xs"><div class="vc_column-inner vc_custom_1586612111435"><div class="wpb_wrapper">
+          	<div  class="wpb_single_image wpb_content_element vc_align_left">
+          		<figure class="wpb_wrapper vc_figure">
+          			<a href="https://vinontech.com/"><img class="vc_img-placeholder vc_single_image-img" src="https://vinontech.com/wp-content/uploads/2021/08/2.png" alt="logo"/></a>
+          		</figure>
+          	</div>
+          </div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-md-6 vc_hidden-xs"><div class="vc_column-inner vc_custom_1586612064713"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-2 vc_col-md-2 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="top-bar-info top-bar-info-lft wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1504469483477"><div class="wpb_wrapper">
+					<a
+				href="#"
+				class="wh-theme-icon vc_custom_1502189275262 crea-primary-color"
+												style="font-size:32px;position:absolute;text-align:center;" 				><i class="icon-icon-location" ></i></a>
+		
+		<p style="font-size: 17px;line-height: 22px;text-align: left" class="vc_custom_heading text-reg vc_custom_1586612173520" >India, UAE</p></div></div></div><div class="top-bar-info wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper">
+					<a
+				href="#"
+				class="wh-theme-icon vc_custom_1502219667960 crea-primary-color"
+												style="font-size:32px;position:absolute;text-align:center;" 				><i class="icon-icon-time" ></i></a>
+		
+		<p style="font-size: 17px;line-height: 22px;text-align: left" class="vc_custom_heading text-reg vc_custom_1512726131626" >24 Hrs</p><p style="font-size: 15px;color: #999999;line-height: 22px;text-align: left" class="vc_custom_heading vc_custom_1512726161568" >7 Days a Week</p></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-5 vc_col-md-3 vc_hidden-xs vc_col-has-fill"><div class="vc_column-inner vc_custom_1586612415246"><div class="wpb_wrapper"><a href="http://smeeptech.com/newsite/schedule-an-appointment" class="wh-button cta-btn rs-cta-btn hd-schedule-btn" >Make an Appointment</a></div></div></div></div></p>
+		</div>
+	</div>
+
+<header class="cbp-row wh-header wh-header-inner  wh-has-embellishment">
+
+	<div class="wh-main-menu-bar-wrapper wh-sticky-header-enabled">
+		<div class="cbp-container">
+			
+				<div class="logo-sticky">
+		<a href="https://vinontech.com/">
+			<img width="" src="https://vinontech.com/wp-content/uploads/2020/04/white-1.png"
+				alt="logo">
+		</a>
+	</div>
+			<div class="wh-main-menu one whole wh-padding">
+				
+<div id="cbp-menu-main">
+	<div class="menu-main-menu-container"><ul id="menu-main-menu" class="sf-menu wh-menu-main pull-right"><li id="menu-item-5873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5871 current_page_item menu-item-5873"><a href="https://vinontech.com/" aria-current="page">Home</a></li>
+<li id="menu-item-5872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5872"><a href="https://vinontech.com/about/">About Us</a></li>
+<li id="menu-item-5874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5874"><a>Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-5886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5886"><a href="https://vinontech.com/aws/">Amazon Web Services</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5887"><a href="https://vinontech.com/aws/migration/">Migration &#038; Consulting</a></li>
+		<li id="menu-item-5888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5888"><a href="https://vinontech.com/aws/msonaws/">Microsoft on AWS</a></li>
+		<li id="menu-item-5889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5889"><a href="https://vinontech.com/aws/aws-managed/">Managed Services</a></li>
+		<li id="menu-item-5890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5890"><a href="https://vinontech.com/aws/devops/">DevOps Automation</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5894"><a href="https://vinontech.com/microsoft365/">Microsoft 365</a></li>
+	<li id="menu-item-5895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5895"><a href="https://vinontech.com/security-driven-networking/">Security Driven Networking</a></li>
+	<li id="menu-item-5896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5896"><a href="https://vinontech.com/cybersecurity/">Cyber Security</a></li>
+	<li id="menu-item-6001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6001"><a target="_blank" rel="noopener" href="https://vinondigital.com">Domains &#038; SSL</a></li>
+</ul>
+</li>
+<li id="menu-item-5893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5893"><a href="https://vinontech.com/partners/">Partners</a></li>
+<li id="menu-item-5891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5891"><a href="https://vinontech.com/solution/">Solution</a></li>
+<li id="menu-item-5958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5958"><a>Blog</a></li>
+<li id="menu-item-5884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5884"><a href="https://vinontech.com/contact/">Contact Us</a></li>
+</ul></div></div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="cbp-row wh-content">
+    <div class="cbp-container wh-padding">
+                                    <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_layerslider_element wpb_content_element"><script type="text/javascript">jQuery(function() { _initLayerSlider( '#layerslider_1_5d9ypn096ci2', {createdWith: '6.11.1', sliderVersion: '6.11.1', hideOnMobile: true, firstSlide: 3, skin: 'v6', skinsPath: 'https://vinontech.com/wp-content/plugins/LayerSlider/assets/static/layerslider/skins/'}); });</script><div id="layerslider_1_5d9ypn096ci2" class="ls-wp-container fitvidsignore" style="width:1280px;height:500px;margin:0 auto;margin-bottom: 0px;"><div class="ls-slide" data-ls="bgsize:100% 100%;duration:5000;transition2d:5;timeshift:5000;kenburnsscale:1.2;"><img width="1024" height="358" src="https://vinontech.com/wp-content/uploads/2020/04/COVID-19-Graphic-web-banner-1024x358-1.jpg" class="ls-bg" alt="" loading="lazy" srcset="https://vinontech.com/wp-content/uploads/2020/04/COVID-19-Graphic-web-banner-1024x358-1.jpg 1024w, https://vinontech.com/wp-content/uploads/2020/04/COVID-19-Graphic-web-banner-1024x358-1-300x105.jpg 300w, https://vinontech.com/wp-content/uploads/2020/04/COVID-19-Graphic-web-banner-1024x358-1-768x269.jpg 768w, https://vinontech.com/wp-content/uploads/2020/04/COVID-19-Graphic-web-banner-1024x358-1-150x52.jpg 150w" sizes="(max-width: 1024px) 100vw, 1024px" /></div><div class="ls-slide" data-ls="duration:5000;transition2d:5;timeshift:5000;kenburnsscale:1.2;"><img width="780" height="420" src="https://vinontech.com/wp-content/uploads/2020/04/covid-19-pandemic.jpg" class="ls-bg" alt="" loading="lazy" srcset="https://vinontech.com/wp-content/uploads/2020/04/covid-19-pandemic.jpg 780w, https://vinontech.com/wp-content/uploads/2020/04/covid-19-pandemic-300x162.jpg 300w, https://vinontech.com/wp-content/uploads/2020/04/covid-19-pandemic-768x414.jpg 768w, https://vinontech.com/wp-content/uploads/2020/04/covid-19-pandemic-150x81.jpg 150w, https://vinontech.com/wp-content/uploads/2020/04/covid-19-pandemic-600x323.jpg 600w" sizes="(max-width: 780px) 100vw, 780px" /></div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md vc_hidden-sm"><div class="vc_column-inner"><div class="wpb_wrapper"><h1 style="color: #ba2f58;text-align: center" class="vc_custom_heading" >Proud Member of MSPAlliance</h1></div></div></div></div><div id="about" class="vc_row wpb_row vc_row-fluid vc_column-gap-30 vc_row-o-equal-height vc_row-flex"><div class="wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top wpb_column vc_column_container vc_col-sm-12 vc_col-md-3"><div class="vc_column-inner vc_custom_1501262173388"><div class="wpb_wrapper"><h3 style="text-align: left" class="vc_custom_heading intro-hd vc_custom_1628586854655" >Meet <b>VINON TECHNOLOGIES's </b>Solution Architects</h3><a href="http://smeeptech.com/newsite/about/" class="wh-alt-button cta-btn rs-cta-ghost-btn" >Find More About Us</a></div></div></div><div class="wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top wpb_column vc_column_container vc_col-sm-12 vc_col-md-6"><div class="vc_column-inner vc_custom_1501262190016"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h4 style="text-align: left" class="vc_custom_heading intro-hd vc_custom_1499335093021" >Why Engage Us?</h4><p style="font-size: 18px;line-height: 28px;text-align: left" class="vc_custom_heading intro-text" >We are <b>Certified, Authorised, Experienced and Reliable Cloud Managed </b>Company Serving across PAN India since 2013. We provide IT Consulting &amp; Managed Cloud services to Retail Banks, Insurance, Telecom, Product Manufacturing, PSU and Government segments. It include application services, systems integration, IT infrastructure management, IT training businesses with market leadership in self service solutions.</p><p style="font-size: 18px;line-height: 28px;text-align: left" class="vc_custom_heading intro-text" >VINON is currently in the process of leveraging its enormous scale and wide reach to expand its offerings of high value and innovative end-to-end solutions in the IT and outsourced business segments.<br />
+Our vision is to become the number one end-to-end solutions provider and demonstrate excellence in providing the best-in-class infrastructure management services to our clients in diverse horizontal and vertical segments.</p></div></div></div></div></div></div></div><div class="wpb_animate_when_almost_visible wpb_bottom-to-top bottom-to-top wpb_column vc_column_container vc_col-sm-2 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1514287455983"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_slideInLeft slideInLeft vc_custom_1516881524252">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1024" height="433" src="https://vinontech.com/wp-content/uploads/2017/12/apn.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://vinontech.com/wp-content/uploads/2017/12/apn.png 1024w, https://vinontech.com/wp-content/uploads/2017/12/apn-600x254.png 600w, https://vinontech.com/wp-content/uploads/2017/12/apn-300x127.png 300w, https://vinontech.com/wp-content/uploads/2017/12/apn-768x325.png 768w, https://vinontech.com/wp-content/uploads/2017/12/apn-150x63.png 150w" sizes="(max-width: 1024px) 100vw, 1024px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_slideInRight slideInRight vc_custom_1513858905525">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1024" height="433" src="https://vinontech.com/wp-content/uploads/2017/12/41.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://vinontech.com/wp-content/uploads/2017/12/41.png 1024w, https://vinontech.com/wp-content/uploads/2017/12/41-600x254.png 600w, https://vinontech.com/wp-content/uploads/2017/12/41-300x127.png 300w, https://vinontech.com/wp-content/uploads/2017/12/41-768x325.png 768w, https://vinontech.com/wp-content/uploads/2017/12/41-150x63.png 150w" sizes="(max-width: 1024px) 100vw, 1024px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_slideInLeft slideInLeft vc_custom_1514287413125">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1024" height="433" src="https://vinontech.com/wp-content/uploads/2017/12/cb.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://vinontech.com/wp-content/uploads/2017/12/cb.png 1024w, https://vinontech.com/wp-content/uploads/2017/12/cb-600x254.png 600w, https://vinontech.com/wp-content/uploads/2017/12/cb-300x127.png 300w, https://vinontech.com/wp-content/uploads/2017/12/cb-768x325.png 768w, https://vinontech.com/wp-content/uploads/2017/12/cb-150x63.png 150w" sizes="(max-width: 1024px) 100vw, 1024px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_slideInRight slideInRight">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1024" height="433" src="https://vinontech.com/wp-content/uploads/2017/12/qwerty.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://vinontech.com/wp-content/uploads/2017/12/qwerty.png 1024w, https://vinontech.com/wp-content/uploads/2017/12/qwerty-600x254.png 600w, https://vinontech.com/wp-content/uploads/2017/12/qwerty-300x127.png 300w, https://vinontech.com/wp-content/uploads/2017/12/qwerty-768x325.png 768w, https://vinontech.com/wp-content/uploads/2017/12/qwerty-150x63.png 150w" sizes="(max-width: 1024px) 100vw, 1024px" /></div>
+		</figure>
+	</div>
+
+	<div  class="wpb_single_image wpb_content_element vc_align_center  wpb_animate_when_almost_visible wpb_slideInLeft slideInLeft">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1498316236165"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text  border-acc crea-primary-color" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div><div id="features-row" class="vc_row wpb_row vc_row-fluid"><div class="image-zoom wpb_column vc_column_container vc_col-sm-6 vc_col-md-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_left-to-right left-to-right vc_custom_1514209863474">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://vinontech.com/wp-content/uploads/2017/12/global-networking-responsive-img-264x180.png" width="264" height="180" alt="global-networking-responsive-img" title="global-networking-responsive-img" /></div>
+		</figure>
+	</div>
+<h5 style="text-align: left" class="vc_custom_heading vc_custom_1514209762041" ><a href="#">Global Coverage</a></h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1514209728581" >
+		<div class="wpb_wrapper">
+			<p>Irrespective of your location in defined countries, we will serve you. No job is too big or too small! We are available 24 hours a day, 7 days a week. For faster service <strong><a href="http://smeeptech.com/newsite/contact/">Contact Us</a></strong></p>
+
+		</div>
+	</div>
+<h6 style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper" ><a href="http://about/"><b>Find Out More</b></a></h6></div></div></div><div class="image-zoom wpb_column vc_column_container vc_col-sm-6 vc_col-md-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_left-to-right left-to-right vc_custom_1621777590746">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://vinontech.com/wp-content/uploads/2021/05/af23dd03798ec42de3e1c950d30b7c8d-264x180.png" width="264" height="180" alt="Mumbai" title="Mumbai" /></div>
+		</figure>
+	</div>
+<h5 style="text-align: left" class="vc_custom_heading vc_custom_1621777603470" ><a href="#">HQ at Mumbai, INDIA</a></h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1621777852347" >
+		<div class="wpb_wrapper">
+			<p>Our HQ office is located in the most popular Mumbai, along with other locations Pune &amp; Kolhapur with skilled and qualified engineers. We provide services throughout <strong>India, APAC &amp; MENA.</strong></p>
+
+		</div>
+	</div>
+<p style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper" ><a href="http://about/"><b>Find Out More</b></a></p></div></div></div><div class="image-zoom wpb_column vc_column_container vc_col-sm-6 vc_col-md-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_left-to-right left-to-right vc_custom_1514210128210">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://vinontech.com/wp-content/uploads/2017/12/Media-Partner-264x180.png" width="264" height="180" alt="Media-Partner" title="Media-Partner" /></div>
+		</figure>
+	</div>
+<h5 style="text-align: left" class="vc_custom_heading vc_custom_1512723630301" ><a href="#">Authorised Partner</a></h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1628586893994" >
+		<div class="wpb_wrapper">
+			<p>VINON Technologies is one amongst few of <strong>Authorised Government &amp; Public Sector Partner</strong> for Cloud Services. Experienced with many of Customers from diverse segments.</p>
+
+		</div>
+	</div>
+<p style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper" ><a href="http://about/"><b>Find Out More</b></a></p></div></div></div><div class="image-zoom wpb_column vc_column_container vc_col-sm-6 vc_col-md-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_left-to-right left-to-right vc_custom_1514210264682">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://vinontech.com/wp-content/uploads/2017/12/Certified-264x180.png" width="264" height="180" alt="Certified" title="Certified" /></div>
+		</figure>
+	</div>
+<h5 style="text-align: left" class="vc_custom_heading vc_custom_1514207760949" ><a href="#">Certified Resources</a></h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1512723881225" >
+		<div class="wpb_wrapper">
+			<p>No Short-Cut. Every resource of an organisation is well qualified and skillful with <strong>Professional certifications</strong> from multiple vendors who can work on multiple solutions.</p>
+
+		</div>
+	</div>
+<p style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper" ><a href="http://apostille/"><b>Find Out More</b></a></p></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid img-over-sec vc_custom_1504536091394 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-md-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1497001332910"><div class="wpb_wrapper">
+					<div class="wh-theme-icon crea-primaty-color" style="font-size:40px;position:absolute;color:#f9b515!important;"  >
+				<i class="icon-icon-booking-form" onMouseOver="this.style.color='#f9b515'" onMouseOut="this.style.color='#f9b515'"></i>
+			</div>
+		
+		<h2 style="color: #ffffff;text-align: left" class="vc_custom_heading form-label vc_custom_1516107182247" >Request Free Estimate</h2><div role="form" class="wpcf7" id="wpcf7-f5523-p5871-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f5523-p5871-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="5523" />
+<input type="hidden" name="_wpcf7_version" value="5.4.2" />
+<input type="hidden" name="_wpcf7_locale" value="en_US" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5523-p5871-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="5871" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
+</div>
+<div class="vc_col-md-4 vc_col-sm-6">
+<p><span class="wpcf7-form-control-wrap client-name"><input type="text" name="client-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your name*" /></span></p>
+<p><span class="wpcf7-form-control-wrap client-company"><input type="text" name="client-company" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Company Name*" /></span></p>
+</div>
+<div class="vc_col-md-4 vc_col-sm-6">
+<p><span class="wpcf7-form-control-wrap client-email"><input type="email" name="client-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email*" /></span></p>
+<p><span class="wpcf7-form-control-wrap client-select"><select name="client-select" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false"><option value="Services">Services</option><option value="Cloud Consultation">Cloud Consultation</option><option value="Managed Services">Managed Services</option><option value="Cloud Solutions">Cloud Solutions</option><option value="Cloud Automation">Cloud Automation</option></select></span></p>
+</div>
+<div class="vc_col-md-2 vc_col-sm-6">
+
+</div>
+<div class="vc_col-sm-6 vc_col-md-2" style="padding-left:6px; padding-right:6px;">
+<button class="wh-borderless rs-cta-btn-form cta-btn horizontal-form" type="submit">Send</button>
+</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div id="services" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1498510322686 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1461592716078"><div class="wpb_wrapper"><h6 style="text-align: left" class="vc_custom_heading text-upper crea-primary-color vc_custom_1504123554049" >Our Services</h6><h2 style="font-size: 44px;text-align: left" class="vc_custom_heading" ><b>How we can help?</b></h2><p style="font-size: 18px;line-height: 28px;text-align: left" class="vc_custom_heading intro-text vc_custom_1628586914805" >We deliver customised services by analysing the customers need. We believe in quality customer service. We are here when you need us to for any type of IT Infrastructure Services..!! Accelerated application delivery. Improved IT efficiency,Increased investment flexibility,Reduced risk,Compete in an ever-changing market withs VINON Technologies's Cloud Solutions.</p></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1498853849383 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs"><div class="vc_column-inner vc_custom_1502185834954"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1513350935592"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading vc_custom_1513351208269" >Migration &amp; Consulting</h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1513350613620" >
+		<div class="wpb_wrapper">
+			<p>Successful Cloud Adoption needs to have the right strategy and complete Cloud Road Map prior to migration.</p>
+
+		</div>
+	</div>
+<h6 style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper vc_custom_1513350812997" ><a href="http://smeeptech.com/newsite/cloudservices/migration/"><b>Find Out More</b></a></h6></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading vc_custom_1513351190109" >Managed Services</h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1513350651184" >
+		<div class="wpb_wrapper">
+			<p>Compellingly transform plug-and-play expertise whereas efficient platforms. Authoritatively communicate.</p>
+
+		</div>
+	</div>
+<h6 style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper vc_custom_1513350833738" ><a href="http://smeeptech.com/newsite/managed-services-2/"><b>Find Out More</b></a></h6></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading vc_custom_1513351220038" >DevOps Automation</h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1513350678132" >
+		<div class="wpb_wrapper">
+			<p>Compellingly transform plug-and-play expertise whereas efficient platforms. Authoritatively communicate.</p>
+
+		</div>
+	</div>
+<h6 style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper vc_custom_1513350850862" ><a href="http://smeeptech.com/newsite/cloudservices/devops/"><b>Find Out More</b></a></h6></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading vc_custom_1513351229890" >Apps On Cloud</h5>
+	<div class="wpb_text_column wpb_content_element  vc_custom_1513350707678" >
+		<div class="wpb_wrapper">
+			<p>When you are developing a commercial software application or a business critical application, and want start hosting it in the Cloud?&#8230;</p>
+
+		</div>
+	</div>
+<h6 style="font-size: 12px;text-align: left" class="vc_custom_heading text-link text-upper vc_custom_1513350880158" ><a href="http://smeeptech.com/newsite/cloudservices/apps/"><b>Find Out More</b></a></h6></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid services-row vc_custom_1501250933561 vc_row-has-fill vc_column-gap-35 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4"><div class="vc_column-inner vc_custom_1501250716544"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4"><div class="vc_column-inner vc_custom_1501250748136"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4"><div class="vc_column-inner vc_custom_1501250793762"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1498316236165"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_blue" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div><div id="numb" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><p style="font-size: 72px;color: #222222;line-height: 96px;text-align: center" class="vc_custom_heading text-strong vc_custom_1512727181037" >17520</p><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1501233569428  vc_custom_1501233569428 crea-primary-color" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div><p style="text-align: center" class="vc_custom_heading intro-text" >Managed Services Hours</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1513331619633"><div class="wpb_wrapper"><p style="font-size: 72px;color: #222222;line-height: 96px;text-align: center" class="vc_custom_heading text-strong vc_custom_1512727181037" >4368</p><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1501233569428  vc_custom_1501233569428 crea-primary-color" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div><p style="text-align: center" class="vc_custom_heading intro-text" >Consultation Hours</p></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1513331619633"><div class="wpb_wrapper"><p style="font-size: 72px;color: #222222;line-height: 96px;text-align: center" class="vc_custom_heading text-strong vc_custom_1512727214308" >45%</p><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_custom_1501233580027  vc_custom_1501233580027 crea-primary-color" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div><p style="text-align: center" class="vc_custom_heading intro-text" >Reduced Costs</p></div></div></div></div><div id="fees" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="2" class="vc_row wpb_row vc_row-fluid bg-img-overlay vc_custom_1504451241312 vc_row-has-fill vc_column-gap-35 vc_general vc_parallax vc_parallax-content-moving"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h6 style="font-size: 14px;color: #f9b515;text-align: left" class="vc_custom_heading text-upper crea-primary-color text-strong vc_custom_1513674716242" >Our Pricing</h6><h2 style="font-size: 44px;color: #ffffff;text-align: left" class="vc_custom_heading" ><b>Managed Services</b></h2><p style="color: #ffffff;text-align: left" class="vc_custom_heading intro-text vc_custom_1514210603938" >We offer ongoing management of your Cloud infrastructure so you can focus on your applications. By implementing best practices to maintain your infrastructure, helps to reduce your operational overhead and risk. Managed Services automates common activities such as change requests, monitoring, patch management, security, and backup services, and provides full-lifecycle services to provision, run, and support your infrastructure.</p><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1481533251129"><div class="wpb_wrapper">		<div class="wh-pricing-plan" style="background-color:rgba(255,255,255,0.9)">
+			<div class="price-box" style="border-bottom:1px solid #cccccc;">
+				<div class="title">Cloud Assistance</div>
+				<div class="price">
+					<small>$</small>
+					<span>599</span>
+				</div>
+			</div>
+			<div class="feature-box" >
+				<ul>
+											<li><i class="icon-check-icon" ></i> Managed AWS Billing</li>
+											<li><i class="icon-check-icon" ></i> Cost &amp; Resource Governance</li>
+											<li><i class="icon-check-icon" ></i> Email &amp; Phone Support</li>
+											<li><i class="icon-check-icon" ></i> 24/7 Assistance</li>
+											<li><i class="icon-check-icon" ></i> Guidance for standard use cases</li>
+											<li><i class="icon-check-icon" ></i> Solution Architecting</li>
+											<li><i class="icon-check-icon" ></i> Business Continuity Planning</li>
+									</ul>
+				<div class="footnote">
+					*Rates are subject to change and depends on SOW				</div>
+			</div>
+		</div>
+
+		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1497348892025"><div class="wpb_wrapper">		<div class="wh-pricing-plan" style="background-color:rgba(255,255,255,0.9)">
+			<div class="price-box" style="border-bottom:1px solid #cccccc;">
+				<div class="title">Standard</div>
+				<div class="price">
+					<small>$</small>
+					<span>999</span>
+				</div>
+			</div>
+			<div class="feature-box" >
+				<ul>
+											<li><i class="icon-check-icon" ></i> Status Monitor 24×7</li>
+											<li><i class="icon-check-icon" ></i> Proactive OS &amp; Web Stack Support</li>
+											<li><i class="icon-check-icon" ></i> Ongoing System Maintenance</li>
+											<li><i class="icon-check-icon" ></i> Business Continuity Planning</li>
+											<li><i class="icon-check-icon" ></i> Response Time in 60 min</li>
+											<li><i class="icon-check-icon" ></i> Security Reviews</li>
+											<li><i class="icon-check-icon" ></i> Cross Geographic Region Backup</li>
+									</ul>
+				<div class="footnote">
+					*Rates are subject to change and depends on SOW				</div>
+			</div>
+		</div>
+
+		</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1497348271027"><div class="wpb_wrapper">		<div class="wh-pricing-plan" style="background-color:rgba(255,255,255,0.9)">
+			<div class="price-box" style="border-bottom:1px solid #cccccc;">
+				<div class="title">Enterprise</div>
+				<div class="price">
+					<small>$</small>
+					<span>1499</span>
+				</div>
+			</div>
+			<div class="feature-box" >
+				<ul>
+											<li><i class="icon-check-icon" ></i> All of Standard Plan</li>
+											<li><i class="icon-check-icon" ></i> Response Time in 15 min</li>
+											<li><i class="icon-check-icon" ></i> DR Plan Testing</li>
+											<li><i class="icon-check-icon" ></i> Access Management (IAM &amp; OS)</li>
+											<li><i class="icon-check-icon" ></i> Security Incident Response</li>
+											<li><i class="icon-check-icon" ></i> System Hardening</li>
+											<li><i class="icon-check-icon" ></i> Review AWS Trusted Advisor</li>
+									</ul>
+				<div class="footnote">
+					*Rates are subject to change and depends on SOW				</div>
+			</div>
+		</div>
+
+		</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1513346125786"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><a href="http://smeeptech.com/newsite/contact/" class="wh-button wh-borderless rs-cta-btn cta-btn button-lg" >FIND MORE ABOUT OUR PRICING</a></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+                        </div>
+</div>
+
+    	<div class="cbp-container wh-footer">
+		<p><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid crea-sec-background vc_custom_1516449831598 vc_row-o-content-top vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-3 vc_col-md-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p><a class="twitter-timeline" href="https://twitter.com/system247?ref_src=twsrc%5Etfw" data-width="300" data-height="300" data-dnt="true">Tweets by System247</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmeeptech&amp;tabs=timeline&amp;width=300&amp;height=300&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=true&amp;show_facepile=true&amp;appId" width="300" height="300" frameborder="0" scrolling="no"></iframe></p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1516448905433"><div class="wpb_wrapper"><h5 style="color: #ffffff;text-align: left" class="vc_custom_heading" >Site Map</h5><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/" title="System247 - Always Available">Home</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/about/" title="About">About Us</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/aws/migration/" title="Migration &amp; Consulting">Migration & Consulting</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/aws/msonaws/" title="Microsoft on AWS">Microsoft on AWS</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="http://smeeptech.com/cloudservices/aws-managed/">Managed Services</a></p><h4 style="font-size: 16px;color: #ffffff;text-align: center" class="vc_custom_heading" ><a href="">SMEEP TECHNOLOGIES</a></h4></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1516881901248"><div class="wpb_wrapper"><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/aws/devops/" title="DevOps Automation">DevOps Automation</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/solution/" title="Solution">Solution</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/partners/" title="Partners">Partners</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="http://smeeptech.com/blog/">Our Blog</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/contact/" title="Contact">Contact Us</a></p><p style="text-align: left" class="vc_custom_heading footer-list_li" ><a href="https://smeeptech.com/privacy_policy/" title="Privacy Policy – System247">Privacy Policy</a></p><h4 style="font-size: 16px;color: #ffffff;text-align: center" class="vc_custom_heading" >Copyright © 2021</h4><p style="font-size: 10px;color: #ffffff;text-align: center" class="vc_custom_heading" >* T&amp;C Apply</p><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1516702091346"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></p>
+	</div>
+
+<link rel='stylesheet' id='vc_animate-css-css'  href='https://vinontech.com/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dgwt-jg-swipebox-css'  href='https://vinontech.com/wp-content/plugins/justified-gallery/includes/Lightbox/Swipebox/assets/css/swipebox.min.css?ver=1.5.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://vinontech.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/booked/assets/js/spin.min.js?ver=2.0.1' id='booked-spin-js-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/booked/assets/js/spin.jquery.js?ver=2.0.1' id='booked-spin-jquery-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/booked/assets/js/tooltipster/js/jquery.tooltipster.min.js?ver=3.3.0' id='booked-tooltipster-js'></script>
+<script type='text/javascript' id='booked-functions-js-extra'>
+/* <![CDATA[ */
+var booked_js_vars = {"ajax_url":"https:\/\/vinontech.com\/wp-admin\/admin-ajax.php","profilePage":"","publicAppointments":"","i18n_confirm_appt_delete":"Are you sure you want to cancel this appointment?","i18n_please_wait":"Please wait ...","i18n_wrong_username_pass":"Wrong username\/password combination.","i18n_fill_out_required_fields":"Please fill out all required fields.","i18n_guest_appt_required_fields":"Please enter your name to book an appointment.","i18n_appt_required_fields":"Please enter your name, your email address and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fields.","i18n_password_reset":"Please check your email for instructions on resetting your password.","i18n_password_reset_error":"That username or email is not recognized."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/booked/assets/js/functions.js?ver=2.3.5' id='booked-functions-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://vinontech.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/vinontech.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2' id='contact-form-7-js'></script>
+<script type='text/javascript' id='booked-fea-js-js-extra'>
+/* <![CDATA[ */
+var booked_fea_vars = {"ajax_url":"https:\/\/vinontech.com\/wp-admin\/admin-ajax.php","i18n_confirm_appt_delete":"Are you sure you want to cancel this appointment?","i18n_confirm_appt_approve":"Are you sure you want to approve this appointment?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/booked/includes/add-ons/frontend-agents/js/functions.js?ver=2.3.5' id='booked-fea-js-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/contact-form-7/includes/js/html5-fallback.js?ver=5.4.2' id='contact-form-7-html5-fallback-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LfKr-gUAAAAAIg-nEP8770lukvmYevyPrJhRwdE&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LfKr-gUAAAAAIg-nEP8770lukvmYevyPrJhRwdE","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.4.2' id='wpcf7-recaptcha-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/redseal-plugin/public/js/main.js?ver=5.7.4' id='scp-main-js-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/jquery.fitvids.min.js' id='jquery-fitvids-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/jquery.hoverIntent.min.js' id='jquery-hoverintent-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/jquery.natural-width-and-height.min.js' id='jquery-naturalwidthheight-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/jquery.scrollUp.min.js' id='jquery-scrollup-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/jquery.sticky.min.js' id='jquery-sticky-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/superfish.min.js' id='superfish-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/crea-responsive-menu.min.js' id='redseal_plugins_responsivemenu-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/themes/redseal/assets/js/crea-main.min.js' id='redseal_scripts-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-includes/js/wp-embed.min.js?ver=5.7.4' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.1' id='wpb_composer_front_js-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min.js?ver=6.1' id='vc_waypoints-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=6.1' id='vc_jquery_skrollr_js-js'></script>
+<script type='text/javascript' src='https://vinontech.com/wp-content/plugins/justified-gallery/includes/Lightbox/Swipebox/assets/js/jquery.swipebox.min.js?ver=1.5.0' id='dgwt-jg-swipebox-js'></script>
+</body>
+</html>
